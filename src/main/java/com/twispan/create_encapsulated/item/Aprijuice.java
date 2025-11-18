@@ -20,7 +20,7 @@ import net.minecraft.world.level.Level;
  * @author itsfirestorm
  */
 public class Aprijuice extends Item {
-    String flavor;
+    private String flavor;
     
     public Aprijuice (Properties props, String flavor) {
         super(props);
