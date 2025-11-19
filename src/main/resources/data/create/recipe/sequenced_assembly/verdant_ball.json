@@ -1,0 +1,52 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_encapsulated:split_green_apricorn"
+  },
+  "results": [
+    {
+      "id": "cobblemon:verdant_ball"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_encapsulated:split_green_apricorn"
+        },
+        [
+          {
+            "item": "create_encapsulated:poke_ball_base"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "create_encapsulated:split_green_apricorn"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_encapsulated:split_green_apricorn"
+        },
+        [
+          {
+            "tag": "c:nuggets/copper"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "create_encapsulated:split_green_apricorn"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_encapsulated:split_green_apricorn"
+  }
+}
