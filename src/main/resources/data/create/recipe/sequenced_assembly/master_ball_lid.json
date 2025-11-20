@@ -1,0 +1,104 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:shulker_shell"
+  },
+  "results": [
+    {
+      "id": "create_encapsulated:master_ball_lid"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:shulker_shell"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:shulker_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:shulker_shell"
+        },
+        [
+          {
+            "item": "create:sand_paper"
+          },
+          {
+            "item": "create:red_sand_paper"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:shulker_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:shulker_shell"
+        },
+        [
+          {
+            "item": "minecraft:nether_star"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:shulker_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:shulker_shell"
+        },
+        [
+          {
+            "item": "create_encapsulated:pink_paint"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:shulker_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:shulker_shell"
+        },
+        [
+          {
+            "item": "create_encapsulated:white_paint"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:shulker_shell"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:shulker_shell"
+  }
+}

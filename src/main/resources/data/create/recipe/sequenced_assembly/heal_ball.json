@@ -1,11 +1,11 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "create_encapsulated:safari_ball_lid"
+    "item": "create_encapsulated:heal_ball_lid"
   },
   "results": [
     {
-      "id": "cobblemon:safari_ball"
+      "id": "cobblemon:heal_ball"
     }
   ],
   "sequence": [
@@ -13,7 +13,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create_encapsulated:safari_ball_lid"
+          "item": "create_encapsulated:heal_ball_lid"
         },
         [
           {
@@ -23,7 +23,7 @@
       ],
       "results": [
         {
-          "id": "create_encapsulated:safari_ball_lid"
+          "id": "create_encapsulated:heal_ball_lid"
         }
       ]
     },
@@ -31,22 +31,22 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create_encapsulated:safari_ball_lid"
+          "item": "create_encapsulated:heal_ball_lid"
         },
         [
           {
-            "tag": "c:nuggets/zinc"
+            "tag": "c:nuggets/copper"
           }
         ]
       ],
       "results": [
         {
-          "id": "create_encapsulated:safari_ball_lid"
+          "id": "create_encapsulated:heal_ball_lid"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "create_encapsulated:safari_ball_lid"
+    "id": "create_encapsulated:heal_ball_lid"
   }
 }
