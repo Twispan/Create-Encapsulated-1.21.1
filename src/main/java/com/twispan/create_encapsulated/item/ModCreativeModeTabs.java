@@ -52,6 +52,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.QUICKBALLLID);
                         output.accept(ModItems.DREAMBALLLID);
                         output.accept(ModItems.MASTERBALLLID);
+                        output.accept(ModItems.BEASTBALLLID);
                         output.accept(ModItems.REDPAINT);
                         output.accept(ModItems.BLUEPAINT);
                         output.accept(ModItems.YELLOWPAINT);

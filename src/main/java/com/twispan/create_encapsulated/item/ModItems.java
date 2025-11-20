@@ -72,6 +72,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MASTERBALLLID = ITEMS.register("master_ball_lid",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BEASTBALLLID = ITEMS.register("beast_ball_lid",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> REDPAINT = ITEMS.register("red_paint",
             () -> new Paint(new Item.Properties().stacksTo(16)));
