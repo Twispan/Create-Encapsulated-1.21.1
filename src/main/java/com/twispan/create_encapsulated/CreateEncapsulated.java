@@ -1,23 +1,22 @@
 package com.twispan.create_encapsulated;
 
+import com.twispan.create_encapsulated.client.ModClientSetup;
 import com.twispan.create_encapsulated.item.ModCreativeModeTabs;
-import com.twispan.create_encapsulated.item.ModItems;
+import com.twispan.create_encapsulated.item.Paint;
+import com.twispan.create_encapsulated.item.PaintFluidHandler;
+import com.twispan.create_encapsulated.registries.ModFluids;
+import com.twispan.create_encapsulated.registries.ModItems;
+import net.minecraft.world.level.material.Fluid;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.fluids.FluidStack;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -27,10 +26,6 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CreateEncapsulated.MODID)
@@ -46,19 +41,29 @@ public class CreateEncapsulated {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        // Register capabilities
+        modEventBus.addListener(this::registerCapabilities);
+
+        // Register the item to a creative tab
+        modEventBus.addListener(this::addCreative);
+
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeModeTabs.register(modEventBus);
+        ModFluids.FLUID_TYPES.register(modEventBus);
+        ModFluids.FLUIDS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
 
-        ModItems.register(modEventBus);
-
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // Register client-side events only on the client
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            modEventBus.addListener(ModClientSetup::onRegisterClientExtensions);
+        }
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -109,7 +114,27 @@ public class CreateEncapsulated {
             event.accept(ModItems.BLACKPAINT);
             event.accept(ModItems.WHITEPAINT);
         }
+    }
 
+    private void registerCapabilities(RegisterCapabilitiesEvent event) {
+        // Register fluid handler capability for all paint items
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> {
+                    if (stack.getItem() instanceof Paint paintItem) {
+                        FluidStack fluidStack = new FluidStack(paintItem.getFluid().get(), 250);
+                        return new PaintFluidHandler(stack, fluidStack);
+                    }
+                    return null;
+                },
+                ModItems.REDPAINT.get(),
+                ModItems.BLUEPAINT.get(),
+                ModItems.GREENPAINT.get(),
+                ModItems.YELLOWPAINT.get(),
+                ModItems.PINKPAINT.get(),
+                ModItems.BLACKPAINT.get(),
+                ModItems.WHITEPAINT.get()
+        );
     }
 
 

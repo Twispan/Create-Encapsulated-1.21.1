@@ -1,6 +1,7 @@
 package com.twispan.create_encapsulated.item;
 
 import com.twispan.create_encapsulated.CreateEncapsulated;
+import com.twispan.create_encapsulated.registries.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
