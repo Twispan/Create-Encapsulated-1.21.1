@@ -1,10 +1,15 @@
-package com.twispan.create_encapsulated.item;
+package com.twispan.create_encapsulated.registries;
 
 import com.twispan.create_encapsulated.CreateEncapsulated;
+import com.twispan.create_encapsulated.fluid.PaintColor;
+import com.twispan.create_encapsulated.fluid.PaintFluid;
+import com.twispan.create_encapsulated.item.Paint;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import static com.twispan.create_encapsulated.registries.ModFluids.*;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CreateEncapsulated.MODID);
@@ -81,19 +86,19 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> REDPAINT = ITEMS.register("red_paint",
-            () -> new Paint(new Item.Properties().stacksTo(16)));
+            () -> new Paint(new Item.Properties().stacksTo(16), RED_PAINT));
     public static final DeferredItem<Item> BLUEPAINT = ITEMS.register("blue_paint",
-            () -> new Paint(new Item.Properties().stacksTo(16)));
+            () -> new Paint(new Item.Properties().stacksTo(16), BLUE_PAINT));
     public static final DeferredItem<Item> YELLOWPAINT = ITEMS.register("yellow_paint",
-            () -> new Paint(new Item.Properties().stacksTo(16)));
+            () -> new Paint(new Item.Properties().stacksTo(16), YELLOW_PAINT));
     public static final DeferredItem<Item> GREENPAINT = ITEMS.register("green_paint",
-            () -> new Paint(new Item.Properties().stacksTo(16)));
+            () -> new Paint(new Item.Properties().stacksTo(16), GREEN_PAINT));
     public static final DeferredItem<Item> PINKPAINT = ITEMS.register("pink_paint",
-            () -> new Paint(new Item.Properties().stacksTo(16)));
+            () -> new Paint(new Item.Properties().stacksTo(16), PINK_PAINT));
     public static final DeferredItem<Item> BLACKPAINT = ITEMS.register("black_paint",
-            () -> new Paint(new Item.Properties().stacksTo(16)));
+            () -> new Paint(new Item.Properties().stacksTo(16), BLACK_PAINT));
     public static final DeferredItem<Item> WHITEPAINT = ITEMS.register("white_paint",
-            () -> new Paint(new Item.Properties().stacksTo(16)));
+            () -> new Paint(new Item.Properties().stacksTo(16), WHITE_PAINT));
 
 
     public static void register(IEventBus eventBus) {
