@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "create_encapsulated:split_blue_apricorn"
+    "item": "cobblemon:sky_tumblestone"
   },
   "results": [
     {
@@ -10,10 +10,46 @@
   ],
   "sequence": [
     {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon:sky_tumblestone"
+        },
+        [
+          {
+            "item": "create:copper_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "cobblemon:sky_tumblestone"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon:sky_tumblestone"
+        },
+        [
+          {
+            "item": "create_encapsulated:split_blue_apricorn"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "cobblemon:sky_tumblestone"
+        }
+      ]
+    },
+    {
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "create_encapsulated:split_blue_apricorn"
+          "item": "cobblemon:sky_tumblestone"
         },
         {
           "type": "neoforge:single",
@@ -23,30 +59,12 @@
       ],
       "results": [
         {
-          "id": "create_encapsulated:split_blue_apricorn"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "create_encapsulated:split_blue_apricorn"
-        },
-        [
-          {
-            "item": "cobblemon:sky_tumblestone"
-          }
-        ]
-      ],
-      "results": [
-        {
-          "id": "create_encapsulated:split_blue_apricorn"
+          "id": "cobblemon:sky_tumblestone"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "create_encapsulated:split_blue_apricorn"
+    "id": "cobblemon:sky_tumblestone"
   }
 }

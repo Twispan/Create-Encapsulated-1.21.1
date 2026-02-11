@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "create_encapsulated:split_black_apricorn"
+    "item": "cobblemon:black_tumblestone"
   },
   "results": [
     {
@@ -13,7 +13,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create_encapsulated:split_black_apricorn"
+          "item": "cobblemon:black_tumblestone"
         },
         [
           {
@@ -23,25 +23,7 @@
       ],
       "results": [
         {
-          "id": "create_encapsulated:split_black_apricorn"
-        }
-      ]
-    },
-    {
-      "type": "create:filling",
-      "ingredients": [
-        {
-          "item": "create_encapsulated:split_black_apricorn"
-        },
-        {
-          "type": "neoforge:single",
-          "amount": 250,
-          "fluid": "create_encapsulated:white_paint"
-        }
-      ],
-      "results": [
-        {
-          "id": "create_encapsulated:split_black_apricorn"
+          "id": "cobblemon:black_tumblestone"
         }
       ]
     },
@@ -49,7 +31,25 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create_encapsulated:split_black_apricorn"
+          "item": "cobblemon:black_tumblestone"
+        },
+        [
+          {
+            "item": "create_encapsulated:split_black_apricorn"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "cobblemon:black_tumblestone"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon:black_tumblestone"
         },
         [
           {
@@ -59,12 +59,30 @@
       ],
       "results": [
         {
-          "id": "create_encapsulated:split_black_apricorn"
+          "id": "cobblemon:black_tumblestone"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "cobblemon:black_tumblestone"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 250,
+          "fluid": "create_encapsulated:white_paint"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon:black_tumblestone"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "create_encapsulated:split_black_apricorn"
+    "id": "cobblemon:black_tumblestone"
   }
 }
