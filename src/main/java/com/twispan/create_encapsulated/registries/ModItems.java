@@ -82,8 +82,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BEASTBALLLID = ITEMS.register("beast_ball_lid",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> CHERISHBALLLID = ITEMS.register("cherish_ball_lid",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> FEATHERBALLLID = ITEMS.register("ancient_feather_ball_lid",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> WINGBALLLID = ITEMS.register("ancient_wing_ball_lid",
@@ -121,6 +119,25 @@ public class ModItems {
             () -> new Paint(new Item.Properties().stacksTo(16), BLACK_PAINT));
     public static final DeferredItem<Item> WHITEPAINT = ITEMS.register("white_paint",
             () -> new Paint(new Item.Properties().stacksTo(16), WHITE_PAINT));
+    public static final DeferredItem<Item> PURPLEPAINT = ITEMS.register("purple_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), PURPLE_PAINT));
+    public static final DeferredItem<Item> MAGENTAPAINT = ITEMS.register("magenta_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), MAGENTA_PAINT));
+    public static final DeferredItem<Item> LIMEPAINT = ITEMS.register("lime_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), LIME_PAINT));
+    public static final DeferredItem<Item> CYANPAINT = ITEMS.register("cyan_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), CYAN_PAINT));
+    public static final DeferredItem<Item> LIGHTBLUEPAINT = ITEMS.register("light_blue_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), LIGHTBLUE_PAINT));
+    public static final DeferredItem<Item> ORANGEPAINT = ITEMS.register("orange_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), ORANGE_PAINT));
+    public static final DeferredItem<Item> BROWNPAINT = ITEMS.register("brown_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), BROWN_PAINT));
+    public static final DeferredItem<Item> LIGHTGRAYPAINT = ITEMS.register("light_gray_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), LIGHTGRAY_PAINT));
+    public static final DeferredItem<Item> GRAYPAINT = ITEMS.register("gray_paint",
+            () -> new Paint(new Item.Properties().stacksTo(16), GRAY_PAINT));
+
 
 
     public static void register(IEventBus eventBus) {

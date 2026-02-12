@@ -72,6 +72,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PINKPAINT);
                         output.accept(ModItems.BLACKPAINT);
                         output.accept(ModItems.WHITEPAINT);
+                        output.accept(ModItems.PURPLEPAINT);
+                        output.accept(ModItems.MAGENTAPAINT);
+                        output.accept(ModItems.LIMEPAINT);
+                        output.accept(ModItems.CYANPAINT);
+                        output.accept(ModItems.LIGHTBLUEPAINT);
+                        output.accept(ModItems.ORANGEPAINT);
+                        output.accept(ModItems.BROWNPAINT);
+                        output.accept(ModItems.LIGHTGRAYPAINT);
+                        output.accept(ModItems.GRAYPAINT);
                     }).build());
 
 {

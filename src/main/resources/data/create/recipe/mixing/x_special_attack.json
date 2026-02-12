@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "cobblemon:petaya_berry"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "cobblemon:pep_up_flower"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "cobblemon:x_special_attack"
+    }
+  ]
+}

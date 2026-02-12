@@ -23,6 +23,15 @@ public class ModClientSetup {
         registerPaintFluidRendering(event, ModFluids.PINK_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
         registerPaintFluidRendering(event, ModFluids.BLACK_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
         registerPaintFluidRendering(event, ModFluids.WHITE_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.PURPLE_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.MAGENTA_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.LIME_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.CYAN_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.LIGHTBLUE_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.ORANGE_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.BROWN_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.LIGHTGRAY_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
+        registerPaintFluidRendering(event, ModFluids.GRAY_PAINT_TYPE.get(), LIQUID_SOFT_STILL);
 
         registerMedicinalBrewRendering(event, ModFluids.MEDICINAL_BREW_TYPE.get(), LIQUID_SOFT_STILL);
 

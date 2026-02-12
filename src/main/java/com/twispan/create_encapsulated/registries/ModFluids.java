@@ -114,6 +114,125 @@ public class ModFluids {
     public static final DeferredHolder<Fluid, PaintFluid.Source> WHITE_PAINT =
             FLUIDS.register("white_paint", () -> new PaintFluid.Source(WHITE_PAINT_TYPE));
 
+                    // Purple Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> PURPLE_PAINT_TYPE =
+            FLUID_TYPES.register("purple_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.PURPLE
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> PURPLE_PAINT =
+            FLUIDS.register("purple_paint", () -> new PaintFluid.Source(PURPLE_PAINT_TYPE));
+
+    // Magenta Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> MAGENTA_PAINT_TYPE =
+            FLUID_TYPES.register("magenta_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.MAGENTA
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> MAGENTA_PAINT =
+            FLUIDS.register("magenta_paint", () -> new PaintFluid.Source(MAGENTA_PAINT_TYPE));
+
+    // Lime Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> LIME_PAINT_TYPE =
+            FLUID_TYPES.register("lime_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.LIME
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> LIME_PAINT =
+            FLUIDS.register("lime_paint", () -> new PaintFluid.Source(LIME_PAINT_TYPE));
+
+    // Cyan Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> CYAN_PAINT_TYPE =
+            FLUID_TYPES.register("cyan_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.CYAN
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> CYAN_PAINT =
+            FLUIDS.register("cyan_paint", () -> new PaintFluid.Source(CYAN_PAINT_TYPE));
+
+    // Light Blue Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> LIGHTBLUE_PAINT_TYPE =
+            FLUID_TYPES.register("light_blue_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.LIGHTBLUE
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> LIGHTBLUE_PAINT =
+            FLUIDS.register("light_blue_paint", () -> new PaintFluid.Source(LIGHTBLUE_PAINT_TYPE));
+
+    // Orange Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> ORANGE_PAINT_TYPE =
+            FLUID_TYPES.register("orange_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.ORANGE
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> ORANGE_PAINT =
+            FLUIDS.register("orange_paint", () -> new PaintFluid.Source(ORANGE_PAINT_TYPE));
+
+    // Brown Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> BROWN_PAINT_TYPE =
+            FLUID_TYPES.register("brown_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.BROWN
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> BROWN_PAINT =
+            FLUIDS.register("brown_paint", () -> new PaintFluid.Source(BROWN_PAINT_TYPE));
+
+    // Light Gray Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> LIGHTGRAY_PAINT_TYPE =
+            FLUID_TYPES.register("light_gray_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.LIGHTGRAY
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> LIGHTGRAY_PAINT =
+            FLUIDS.register("light_gray_paint", () -> new PaintFluid.Source(LIGHTGRAY_PAINT_TYPE));
+
+    // Gray Paint
+    public static final DeferredHolder<FluidType, PaintFluidType> GRAY_PAINT_TYPE =
+            FLUID_TYPES.register("gray_paint", () -> new PaintFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    PaintColor.GRAY
+            ));
+
+    public static final DeferredHolder<Fluid, PaintFluid.Source> GRAY_PAINT =
+            FLUIDS.register("gray_paint", () -> new PaintFluid.Source(GRAY_PAINT_TYPE));
+
+
+
     // Medicinal Brew
     public static final DeferredHolder<FluidType, MedicinalBrewFluidType> MEDICINAL_BREW_TYPE =
             FLUID_TYPES.register("medicinal_brew", () -> new MedicinalBrewFluidType(

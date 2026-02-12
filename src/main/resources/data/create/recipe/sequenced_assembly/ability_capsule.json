@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:glass_bottle"
+  },
+  "results": [
+    {
+      "id": "cobblemon:ability_capsule"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:glass_bottle"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 250,
+          "fluid": "create_encapsulated:medicinal_brew"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:glass_bottle"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:glass_bottle"
+        },
+        {
+          "item": "minecraft:fermented_spider_eye"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:glass_bottle"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:glass_bottle"
+        },
+        {
+          "item": "minecraft:lapis_lazuli"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:glass_bottle"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:glass_bottle"
+        },
+        {
+          "item": "cobblemon:mirror_herb"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:glass_bottle"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cobblemon:medicinal_brew"
+  }
+}

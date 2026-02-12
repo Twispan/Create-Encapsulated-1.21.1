@@ -7,7 +7,16 @@ public enum PaintColor {
     YELLOW(0xF8D332),
     PINK(0xE89DC9),
     BLACK(0x656C8B),
-    WHITE(-1);
+    WHITE(-1),
+    PURPLE(0xA35DCC),
+    MAGENTA(0xD673D0),
+    LIME(0x84F725),
+    CYAN(0x4CBCC0),
+    LIGHTBLUE(0x80B4FF),
+    ORANGE(0xFEAC3A),
+    BROWN(0xB9754E),
+    LIGHTGRAY(0xB0B0B0),
+    GRAY(0x898989);
 
     private final int color;
 

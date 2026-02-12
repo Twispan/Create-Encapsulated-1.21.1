@@ -1,0 +1,101 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:paper"
+  },
+  "results": [
+    {
+      "id": "cobblemon:ability_patch"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        [
+          {
+            "item": "cobblemon:ability_capsule"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:paper"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        [
+          {
+            "item": "minecraft:diamond"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:paper"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        [
+          {
+            "item": "minecraft:nether_star"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:paper"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        [
+          {
+            "item": "create:brass_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "minecraft:paper"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:paper"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:paper"
+  }
+}

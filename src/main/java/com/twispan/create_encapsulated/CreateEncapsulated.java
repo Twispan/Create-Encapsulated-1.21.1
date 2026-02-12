@@ -125,6 +125,15 @@ public class CreateEncapsulated {
             event.accept(ModItems.PINKPAINT);
             event.accept(ModItems.BLACKPAINT);
             event.accept(ModItems.WHITEPAINT);
+            event.accept(ModItems.PURPLEPAINT);
+            event.accept(ModItems.MAGENTAPAINT);
+            event.accept(ModItems.LIMEPAINT);
+            event.accept(ModItems.CYANPAINT);
+            event.accept(ModItems.LIGHTBLUEPAINT);
+            event.accept(ModItems.ORANGEPAINT);
+            event.accept(ModItems.BROWNPAINT);
+            event.accept(ModItems.LIGHTGRAYPAINT);
+            event.accept(ModItems.GRAYPAINT);
         }
     }
 
@@ -145,7 +154,16 @@ public class CreateEncapsulated {
                 ModItems.YELLOWPAINT.get(),
                 ModItems.PINKPAINT.get(),
                 ModItems.BLACKPAINT.get(),
-                ModItems.WHITEPAINT.get()
+                ModItems.WHITEPAINT.get(),
+                ModItems.PURPLEPAINT.get(),
+                ModItems.MAGENTAPAINT.get(),
+                ModItems.LIMEPAINT.get(),
+                ModItems.CYANPAINT.get(),
+                ModItems.LIGHTBLUEPAINT.get(),
+                ModItems.ORANGEPAINT.get(),
+                ModItems.BROWNPAINT.get(),
+                ModItems.LIGHTGRAYPAINT.get(),
+                ModItems.GRAYPAINT.get()
 
         );
         // Register fluid handler capability for medicinal brew

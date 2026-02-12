@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:cherish_ball"
+    },
+    "title": "Shoko Sunday",
+    "description": "Assemble a Cherish Ball",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "create_encapsulated:custom/paint_lid",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cobblemon:cherish_ball"
+            ]
+          }
+        ],
+        "recipe_id": ""
+      }
+    }
+  }
+}

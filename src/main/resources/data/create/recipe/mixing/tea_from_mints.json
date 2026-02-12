@@ -1,0 +1,34 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "cobblemon:mint_leaves"
+    },
+    {
+      "tag": "cobblemon:mint_leaves"
+    },
+    {
+      "tag": "cobblemon:mint_leaves"
+    },
+    {
+      "tag": "cobblemon:mint_leaves"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "minecraft:water"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "create:tea"
+    }
+  ]
+}
