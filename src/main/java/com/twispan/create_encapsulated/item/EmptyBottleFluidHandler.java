@@ -1,6 +1,8 @@
 package com.twispan.create_encapsulated.item;
 
 import com.twispan.create_encapsulated.fluid.MedicinalBrewFluidType;
+import com.twispan.create_encapsulated.fluid.other_medicine.OMedicineFluidType;
+import com.twispan.create_encapsulated.fluid.other_medicine.OMedicines;
 import com.twispan.create_encapsulated.fluid.paint.PaintColor;
 import com.twispan.create_encapsulated.fluid.paint.PaintFluidType;
 import com.twispan.create_encapsulated.fluid.potions.PotionFluidType;
@@ -91,6 +93,12 @@ public class EmptyBottleFluidHandler implements IFluidHandlerItem {
 
                 container = vitaminItem.copy();
             }
+
+            if (resource.getFluidType() instanceof OMedicineFluidType oMedicineFluidType) {
+                ItemStack medicineItem = getOMedicineItem(oMedicineFluidType);
+
+                container = medicineItem.copy();
+            }
         }
 
         return fillAmount;
@@ -146,6 +154,24 @@ public class EmptyBottleFluidHandler implements IFluidHandlerItem {
             case PP_MAX -> new ItemStack(CobblemonItems.PP_MAX);
             case IRON -> new ItemStack(CobblemonItems.IRON);
             case ZINC -> new ItemStack(CobblemonItems.ZINC);
+        };
+    }
+
+    private static @NotNull ItemStack getOMedicineItem(OMedicineFluidType oMedicineFluidType) {
+        OMedicines type = oMedicineFluidType.getType();
+
+        // Transform the empty bottle into the corresponding medicine item
+        return switch (type) {
+            case ANTIDOTE -> new ItemStack(CobblemonItems.ANTIDOTE);
+            case PARALYZE_HEAL -> new ItemStack(CobblemonItems.PARALYZE_HEAL);
+            case AWAKENING -> new ItemStack(CobblemonItems.AWAKENING);
+            case FULL_HEAL -> new ItemStack(CobblemonItems.FULL_HEAL);
+            case BURN_HEAL -> new ItemStack(CobblemonItems.BURN_HEAL);
+            case ICE_HEAL -> new ItemStack(CobblemonItems.ICE_HEAL);
+            case ETHER -> new ItemStack(CobblemonItems.ETHER);
+            case MAX_ETHER -> new ItemStack(CobblemonItems.MAX_ETHER);
+            case ELIXIR -> new ItemStack(CobblemonItems.ELIXIR);
+            case MAX_ELIXIR -> new ItemStack(CobblemonItems.MAX_ELIXIR);
         };
     }
 

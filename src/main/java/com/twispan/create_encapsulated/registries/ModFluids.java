@@ -3,6 +3,9 @@ package com.twispan.create_encapsulated.registries;
 import com.twispan.create_encapsulated.CreateEncapsulated;
 import com.twispan.create_encapsulated.fluid.MedicinalBrewFluid;
 import com.twispan.create_encapsulated.fluid.MedicinalBrewFluidType;
+import com.twispan.create_encapsulated.fluid.other_medicine.OMedicineFluid;
+import com.twispan.create_encapsulated.fluid.other_medicine.OMedicineFluidType;
+import com.twispan.create_encapsulated.fluid.other_medicine.OMedicines;
 import com.twispan.create_encapsulated.fluid.paint.PaintColor;
 import com.twispan.create_encapsulated.fluid.paint.PaintFluid;
 import com.twispan.create_encapsulated.fluid.paint.PaintFluidType;
@@ -416,4 +419,134 @@ public class ModFluids {
 
     public static final DeferredHolder<Fluid, VitaminFluid> ZINC =
             FLUIDS.register("zinc", () -> new VitaminFluid.Source(ZINC_TYPE));
+
+    // Antidote
+    public static final DeferredHolder<FluidType, OMedicineFluidType> ANTIDOTE_TYPE =
+            FLUID_TYPES.register("antidote", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.ANTIDOTE
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> ANTIDOTE =
+            FLUIDS.register("antidote", () -> new OMedicineFluid.Source(ANTIDOTE_TYPE));
+
+    // Para heal
+    public static final DeferredHolder<FluidType, OMedicineFluidType> PARALYZE_HEAL_TYPE =
+            FLUID_TYPES.register("paralyze_heal", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.PARALYZE_HEAL
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> PARALYZE_HEAL =
+            FLUIDS.register("paralyze_heal", () -> new OMedicineFluid.Source(PARALYZE_HEAL_TYPE));
+
+    // Awakening
+    public static final DeferredHolder<FluidType, OMedicineFluidType> AWAKENING_TYPE =
+            FLUID_TYPES.register("awakening", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.AWAKENING
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> AWAKENING =
+            FLUIDS.register("awakening", () -> new OMedicineFluid.Source(AWAKENING_TYPE));
+
+    // Full heal
+    public static final DeferredHolder<FluidType, OMedicineFluidType> FULL_HEAL_TYPE =
+            FLUID_TYPES.register("full_heal", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.FULL_HEAL
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> FULL_HEAL =
+            FLUIDS.register("full_heal", () -> new OMedicineFluid.Source(FULL_HEAL_TYPE));
+
+    // Burn heal
+    public static final DeferredHolder<FluidType, OMedicineFluidType> BURN_HEAL_TYPE =
+            FLUID_TYPES.register("burn_heal", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.BURN_HEAL
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> BURN_HEAL =
+            FLUIDS.register("burn_heal", () -> new OMedicineFluid.Source(BURN_HEAL_TYPE));
+
+    // Ice heal
+    public static final DeferredHolder<FluidType, OMedicineFluidType> ICE_HEAL_TYPE =
+            FLUID_TYPES.register("ice_heal", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.ICE_HEAL
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> ICE_HEAL =
+            FLUIDS.register("ice_heal", () -> new OMedicineFluid.Source(ICE_HEAL_TYPE));
+
+    // Ether
+    public static final DeferredHolder<FluidType, OMedicineFluidType> ETHER_TYPE =
+            FLUID_TYPES.register("ether", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.ETHER
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> ETHER =
+            FLUIDS.register("ether", () -> new OMedicineFluid.Source(ETHER_TYPE));
+
+    // Max ether
+    public static final DeferredHolder<FluidType, OMedicineFluidType> MAX_ETHER_TYPE =
+            FLUID_TYPES.register("max_ether", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.MAX_ETHER
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> MAX_ETHER =
+            FLUIDS.register("max_ether", () -> new OMedicineFluid.Source(MAX_ETHER_TYPE));
+
+    // Elixir
+    public static final DeferredHolder<FluidType, OMedicineFluidType> ELIXIR_TYPE =
+            FLUID_TYPES.register("elixir", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.ELIXIR
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> ELIXIR =
+            FLUIDS.register("elixir", () -> new OMedicineFluid.Source(ELIXIR_TYPE));
+
+    // Max elixir
+    public static final DeferredHolder<FluidType, OMedicineFluidType> MAX_ELIXIR_TYPE =
+            FLUID_TYPES.register("max_elixir", () -> new OMedicineFluidType(
+                    FluidType.Properties.create()
+                            .density(2000)
+                            .viscosity(6000)
+                            .temperature(300),
+                    OMedicines.MAX_ELIXIR
+            ));
+
+    public static final DeferredHolder<Fluid, OMedicineFluid> MAX_ELIXIR =
+            FLUIDS.register("max_elixir", () -> new OMedicineFluid.Source(MAX_ELIXIR_TYPE));
 }
