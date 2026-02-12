@@ -95,7 +95,7 @@ public class ModClientSetup {
             @Override
             public int getTintColor() {
                 // Potion fluids are somewhat transparent
-                return 0x90000000 | fluidType.getType().getType();
+                return 0xCC000000 | fluidType.getType().getType();
             }
         }, fluidType);
     }
