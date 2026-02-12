@@ -2,6 +2,7 @@ package com.twispan.create_encapsulated.client;
 
 import com.twispan.create_encapsulated.CreateEncapsulated;
 import com.twispan.create_encapsulated.fluid.MedicinalBrewFluidType;
+import com.twispan.create_encapsulated.fluid.other_medicine.OMedicineFluidType;
 import com.twispan.create_encapsulated.fluid.paint.PaintFluidType;
 import com.twispan.create_encapsulated.fluid.potions.PotionFluidType;
 import com.twispan.create_encapsulated.fluid.vitamins.VitaminFluidType;
@@ -52,6 +53,16 @@ public class ModClientSetup {
         registerVitaminFluidRendering(event, ModFluids.PROTEIN_TYPE.get(), LIQUID_STRONG_STILL);
         registerVitaminFluidRendering(event, ModFluids.ZINC_TYPE.get(), LIQUID_STRONG_STILL);
 
+        registerOMedicineFluidRendering(event, ModFluids.ANTIDOTE_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.PARALYZE_HEAL_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.AWAKENING_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.FULL_HEAL_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.BURN_HEAL_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.ICE_HEAL_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.ETHER_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.MAX_ETHER_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.ELIXIR_TYPE.get(), LIQUID_MEDIUM_STILL);
+        registerOMedicineFluidRendering(event, ModFluids.MAX_ELIXIR_TYPE.get(), LIQUID_MEDIUM_STILL);
     }
 
     private static void registerPaintFluidRendering(
@@ -136,6 +147,23 @@ public class ModClientSetup {
             public int getTintColor() {
                 return 0xFF000000 | fluidType.getType().getType();
             }
+        }, fluidType);
+    }
+
+    private static void registerOMedicineFluidRendering(
+            RegisterClientExtensionsEvent event,
+            OMedicineFluidType fluidType,
+            ResourceLocation still
+    ) {
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public @NotNull ResourceLocation getStillTexture() { return still; }
+
+            @Override
+            public ResourceLocation getOverlayTexture() { return still; }
+
+            @Override
+            public int getTintColor() { return 0xFF000000 | fluidType.getType().getMedicineType(); }
         }, fluidType);
     }
 }

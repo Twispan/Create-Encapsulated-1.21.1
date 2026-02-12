@@ -270,6 +270,77 @@ public class CreateEncapsulated {
                 CobblemonItems.ZINC
         );
 
+        // Register fluid handling capability for other medicines
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.ANTIDOTE.get(), 250)),
+                CobblemonItems.ANTIDOTE
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.PARALYZE_HEAL.get(), 250)),
+                CobblemonItems.PARALYZE_HEAL
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.AWAKENING.get(), 250)),
+                CobblemonItems.AWAKENING
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.FULL_HEAL.get(), 250)),
+                CobblemonItems.FULL_HEAL
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.BURN_HEAL.get(), 250)),
+                CobblemonItems.BURN_HEAL
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.ICE_HEAL.get(), 250)),
+                CobblemonItems.ICE_HEAL
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.ETHER.get(), 250)),
+                CobblemonItems.ETHER
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.MAX_ETHER.get(), 250)),
+                CobblemonItems.MAX_ETHER
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.ELIXIR.get(), 250)),
+                CobblemonItems.ELIXIR
+        );
+
+        event.registerItem(
+                Capabilities.FluidHandler.ITEM,
+                (stack, context) -> new FluidItemHandler(stack,
+                        new FluidStack(ModFluids.MAX_ELIXIR.get(), 250)),
+                CobblemonItems.MAX_ELIXIR
+        );
+
         // Milk (for moomoo milk)
         event.registerItem(
                 Capabilities.FluidHandler.ITEM,

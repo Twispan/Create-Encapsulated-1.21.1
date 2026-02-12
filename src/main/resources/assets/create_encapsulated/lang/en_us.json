@@ -87,5 +87,25 @@
   "fluid_type.create_encapsulated.max_potion": "Max Potion",
   "fluid_type.create_encapsulated.full_restore": "Full Restore",
 
+  "fluid_type.create_encapsulated.calcium": "Calcium",
+  "fluid_type.create_encapsulated.carbos": "Carbos",
+  "fluid_type.create_encapsulated.hp_up": "HP Up",
+  "fluid_type.create_encapsulated.iron": "Iron",
+  "fluid_type.create_encapsulated.pp_up": "PP Up",
+  "fluid_type.create_encapsulated.pp_max": "PP Max",
+  "fluid_type.create_encapsulated.protein": "Protein",
+  "fluid_type.create_encapsulated.zinc": "Zinc",
+
+  "fluid_type.create_encapsulated.antidote": "Antidote",
+  "fluid_type.create_encapsulated.paralyze_heal": "Paralyze Heal",
+  "fluid_type.create_encapsulated.awakening": "Awakening",
+  "fluid_type.create_encapsulated.full_heal": "Full Heal",
+  "fluid_type.create_encapsulated.burn_heal": "Burn Heal",
+  "fluid_type.create_encapsulated.ice_heal": "Ice Heal",
+  "fluid_type.create_encapsulated.ether": "Ether",
+  "fluid_type.create_encapsulated.max_ether": "Max Ether",
+  "fluid_type.create_encapsulated.elixir": "Elixir",
+  "fluid_type.create_encapsulated.max_elixir": "Max Elixir",
+
   "creativetab.create_encapsulated.pokeballcomponents_items": "Poké Ball Components"
 }
