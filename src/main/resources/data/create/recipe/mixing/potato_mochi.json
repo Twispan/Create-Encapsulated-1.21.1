@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "cobblemon:hearty_grains"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "create:honey"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:potato_mochi"
+    }
+  ]
+}

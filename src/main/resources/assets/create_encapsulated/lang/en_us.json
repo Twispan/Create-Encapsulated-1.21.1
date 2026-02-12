@@ -63,6 +63,11 @@
   "fluid_type.create_encapsulated.white_paint": "White Paint",
 
   "fluid_type.create_encapsulated.medicinal_brew": "Medicinal Brew",
+  "fluid_type.create_encapsulated.potion": "Potion",
+  "fluid_type.create_encapsulated.super_potion": "Super Potion",
+  "fluid_type.create_encapsulated.hyper_potion": "Hyper Potion",
+  "fluid_type.create_encapsulated.max_potion": "Max Potion",
+  "fluid_type.create_encapsulated.full_restore": "Full Restore",
 
   "creativetab.create_encapsulated.pokeballcomponents_items": "Poké Ball Components"
 }

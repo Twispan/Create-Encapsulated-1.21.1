@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "cobblemon:wattmel_berry"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:pink_dye"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:green_dye"
+    }
+  ]
+}

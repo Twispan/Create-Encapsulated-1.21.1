@@ -1,0 +1,32 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "cobblemon:pink_gilded_chest"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "count": 4,
+      "id": "cobblemon:apricorn_planks"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:dried_kelp"
+    },
+    {
+      "chance": 0.45,
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "chance": 0.50,
+      "count": 2,
+      "id": "cobblemon:apricorn_planks"
+    }
+  ]
+}

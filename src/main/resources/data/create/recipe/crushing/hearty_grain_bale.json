@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "cobblemon:hearty_grain_bale"
+    }
+  ],
+  "processing_time": 300,
+  "results": [
+    {
+      "count": 9,
+      "id": "cobblemon:hearty_grains"
+    }
+  ]
+}

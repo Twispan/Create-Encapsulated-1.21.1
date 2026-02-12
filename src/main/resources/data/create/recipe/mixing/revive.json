@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "cobblemon:heal_powder"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "create:honey"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:revive"
+    }
+  ]
+}

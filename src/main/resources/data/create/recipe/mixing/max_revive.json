@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "cobblemon:revive"
+    },
+    {
+      "item": "cobblemon:revive"
+    },
+    {
+      "item": "cobblemon:vivichoke"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "create:honey"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:max_revive"
+    }
+  ]
+}
