@@ -16,6 +16,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INCOMPMASTERBALLLID = ITEMS.register("incomplete_master_ball_lid",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAINBOW_PAINT = ITEMS.register("rainbow_paint",
+            () -> new Paint(new Item.Properties(), null));
 
     public static final DeferredItem<Item> POKEBALLBASE = ITEMS.register("poke_ball_base",
             () -> new Item(new Item.Properties()));
@@ -137,10 +139,4 @@ public class ModItems {
             () -> new Paint(new Item.Properties().stacksTo(64), LIGHTGRAY_PAINT));
     public static final DeferredItem<Item> GRAYPAINT = ITEMS.register("gray_paint",
             () -> new Paint(new Item.Properties().stacksTo(64), GRAY_PAINT));
-
-
-
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
 }

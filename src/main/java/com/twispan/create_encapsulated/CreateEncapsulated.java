@@ -59,6 +59,8 @@ public class CreateEncapsulated {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        NeoForge.EVENT_BUS.addListener(Paint::onTooltip);
+
         ModCreativeModeTabs.register(modEventBus);
         ModFluids.FLUID_TYPES.register(modEventBus);
         ModFluids.FLUIDS.register(modEventBus);
@@ -148,8 +150,10 @@ public class CreateEncapsulated {
                 Capabilities.FluidHandler.ITEM,
                 (stack, context) -> {
                     if (stack.getItem() instanceof Paint paintItem) {
-                        FluidStack fluidStack = new FluidStack(paintItem.getFluid().get(), 250);
-                        return new FluidItemHandler(stack, fluidStack);
+                        return paintItem.getFluid().map(f -> {
+                            FluidStack fluidStack = new FluidStack(f.get(), 250);
+                            return new FluidItemHandler(stack, fluidStack);
+                        }).orElse(null);
                     }
                     return null;
                 },

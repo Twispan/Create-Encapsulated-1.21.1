@@ -1,8 +1,15 @@
 package com.twispan.create_encapsulated.item;
 
+import com.twispan.create_encapsulated.registries.ModDamageTypes;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.damagesource.DamageSource;
+import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import com.twispan.create_encapsulated.advancements.ModTriggers;
 import com.twispan.create_encapsulated.fluid.paint.PaintColor;
 import com.twispan.create_encapsulated.fluid.paint.PaintFluidType;
+import com.twispan.create_encapsulated.registries.ModItems;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -13,24 +20,27 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.material.Fluid;
+import net.neoforged.bus.api.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class Paint extends Item {
-    private final Supplier<? extends Fluid> fluid;
+    private final Optional<Supplier<? extends Fluid>> fluid;
 
     public Paint (Properties props, Supplier<? extends Fluid> fluid) {
         super(props);
-        this.fluid = fluid;
+        this.fluid = Optional.ofNullable(fluid);
     }
 
-    public Supplier<? extends Fluid> getFluid() {
+    public Optional<Supplier<? extends Fluid>> getFluid() {
         return fluid;
     }
 
     public PaintColor getColor() {
-        return ((PaintFluidType) this.fluid.get().getFluidType()).getPaintColor();
+        return fluid.map(f -> ((PaintFluidType) f.get().getFluidType()).getPaintColor())
+                .orElse(null);
     }
 
     @Override
@@ -59,9 +69,18 @@ public class Paint extends Item {
     @Override
     public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, Level level, @NotNull LivingEntity entity) {
         if (!level.isClientSide) {
-            entity.addEffect(new MobEffectInstance(MobEffects.POISON, 300, 1));
-            entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 300, 1));
-            entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 1800));
+            if (stack.is(ModItems.RAINBOW_PAINT)) {
+                DamageSource tasteRainbow = new DamageSource(
+                        level.registryAccess()
+                                .registryOrThrow(Registries.DAMAGE_TYPE)
+                                .getHolderOrThrow(ModDamageTypes.TASTE_RAINBOW)
+                );
+                entity.hurt(tasteRainbow, Float.MAX_VALUE);
+            } else {
+                entity.addEffect(new MobEffectInstance(MobEffects.POISON, 300, 1));
+                entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 300, 1));
+                entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 1800));
+            }
 
             if (entity instanceof ServerPlayer serverPlayer) {
                 ModTriggers.DRANK_PAINT.get().trigger(serverPlayer, this.getColor());
@@ -79,5 +98,21 @@ public class Paint extends Item {
         }
 
         return super.finishUsingItem(stack, level, entity);
+    }
+
+    @SubscribeEvent
+    public static void onTooltip(ItemTooltipEvent event) {
+        ItemStack stack = event.getItemStack();
+
+        if(stack.is(ModItems.RAINBOW_PAINT.get())) {
+            event.getToolTip().add(
+                    Component.literal("Where did you get this?")
+                            .withStyle(ChatFormatting.GRAY)
+            );
+            event.getToolTip().add(
+                    Component.literal("Drinking it may lead to unexpected consequences.")
+                            .withStyle(ChatFormatting.DARK_PURPLE)
+            );
+        }
     }
 }
