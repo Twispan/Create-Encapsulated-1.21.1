@@ -4,7 +4,7 @@
       "id": "create_encapsulated:rainbow_paint"
     },
     "title": "Taste the Rainbow",
-    "description": "Drink every color of Paint; Why would you do this?",
+    "description": "Drink every color of Paint; why would you do this?",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
