@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_encapsulated:black_paint"
+    },
+    {
+      "item": "create:pulp"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:black_sludge"
+    }
+  ]
+}

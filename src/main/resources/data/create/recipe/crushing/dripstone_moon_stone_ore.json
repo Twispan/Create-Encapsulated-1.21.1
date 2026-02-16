@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "cobblemon:dripstone_moon_stone_ore"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "id": "cobblemon:moon_stone"
+    },
+    {
+      "chance": 0.75,
+      "id": "cobblemon:moon_stone"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "id": "minecraft:dripstone_block"
+    }
+  ]
+}
