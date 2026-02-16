@@ -1,0 +1,13 @@
+{
+  "type": "cobblemon:cooking_pot_shapeless",
+  "category": "foods",
+  "ingredients": [
+    { "tag": "minecraft:leaves" },
+    { "item": "cobblemon:moomoo_milk" },
+    { "tag": "c:potions/bottle" }
+  ],
+  "result": { "id": "create:builders_tea" },
+  "count": 2,
+  "seasoningTag": "cobblemon:empty",
+  "seasoningProcessors": []
+}

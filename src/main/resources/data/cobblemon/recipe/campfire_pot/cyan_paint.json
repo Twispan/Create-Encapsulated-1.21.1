@@ -4,7 +4,7 @@
   "ingredients": [
     { "item": "minecraft:cyan_dye" },
     { "item": "create:wheat_flour" },
-    { "item": "minecraft:potion" }
+    { "item": "c:potions/bottle" }
   ],
   "result": { "id": "create_encapsulated:cyan_paint" },
   "seasoningTag": "cobblemon:empty",

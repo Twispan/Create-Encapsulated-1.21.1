@@ -4,7 +4,7 @@
   "ingredients": [
     { "item": "minecraft:green_dye" },
     { "item": "create:wheat_flour" },
-    { "item": "minecraft:potion" }
+    { "item": "c:potions/bottle" }
   ],
   "result": { "id": "create_encapsulated:green_paint" },
   "seasoningTag": "cobblemon:empty",

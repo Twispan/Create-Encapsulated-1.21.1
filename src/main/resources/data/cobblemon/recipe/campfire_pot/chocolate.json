@@ -1,0 +1,12 @@
+{
+  "type": "cobblemon:cooking_pot_shapeless",
+  "category": "foods",
+  "ingredients": [
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:cocoa_beans" },
+    { "item": "cobblemon:moomoo_milk" }
+  ],
+  "result": { "id": "create:bar_of_chocolate" },
+  "seasoningTag": "cobblemon:empty",
+  "seasoningProcessors": []
+}
