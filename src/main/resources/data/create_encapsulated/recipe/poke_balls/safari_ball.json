@@ -6,7 +6,10 @@
       "item": "create_encapsulated:poke_ball_base"
     },
     {
-      "tag": "c:nuggets/copper"
+      "item": "create:zinc_nugget"
+    },
+    {
+      "item": "minecraft:iron_nugget"
     },
     {
       "item": "create_encapsulated:safari_ball_lid"
