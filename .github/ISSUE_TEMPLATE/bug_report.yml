@@ -6,9 +6,7 @@ labels: ["🪲 Bug"]
 body:
   - type: markdown
     attributes:
-      value: | 
-        Bug report. Please fill out all of the required fields.
-        Any bug report with missing fields or incomplete information will be closed.
+      value: Any bug report with missing fields or incomplete information will be closed.
         
   - type: textarea
     id: description
