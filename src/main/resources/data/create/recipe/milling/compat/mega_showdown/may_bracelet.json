@@ -1,0 +1,29 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:may_bracelet"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:keystone"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.50,
+      "count": 1,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.40,
+      "count": 1,
+      "id": "minecraft:nautilus_shell"
+    }
+  ]
+}

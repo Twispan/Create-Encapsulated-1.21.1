@@ -1,0 +1,23 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:dynamax_band"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:wishing_star"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.50,
+      "id": "minecraft:iron_ingot"
+    }
+  ]
+}

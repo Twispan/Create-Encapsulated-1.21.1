@@ -1,0 +1,27 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:hapu_z_ring"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:sparkling_stone_dark"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:leather"
+    }
+  ]
+}

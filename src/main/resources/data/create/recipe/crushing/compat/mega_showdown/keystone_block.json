@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "mega_showdown:keystone_block"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "id": "mega_showdown:mega_meteorid_block"
+    }
+  ]
+}

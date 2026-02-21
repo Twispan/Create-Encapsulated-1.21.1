@@ -1,0 +1,15 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:keystone"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:mega_stone"
+    }
+  ]
+}

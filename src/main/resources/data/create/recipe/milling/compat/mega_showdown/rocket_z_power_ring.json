@@ -1,0 +1,29 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:rocket_z_power_ring"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:sparkling_stone_dark"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.50,
+      "count": 2,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "id": "minecraft:iron_ingot"
+    }
+  ]
+}

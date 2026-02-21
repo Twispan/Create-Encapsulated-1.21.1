@@ -1,0 +1,24 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:z_ring_green"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:sparkling_stone_light"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.50,
+      "count": 1,
+      "id": "minecraft:iron_ingot"
+    }
+  ]
+}

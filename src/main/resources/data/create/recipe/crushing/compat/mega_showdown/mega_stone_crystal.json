@@ -1,0 +1,18 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "mega_showdown:mega_stone_crystal"
+    }
+  ],
+  "processing_time": 300,
+  "results": [
+    {
+      "id": "mega_showdown:mega_stone"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    }
+  ]
+}

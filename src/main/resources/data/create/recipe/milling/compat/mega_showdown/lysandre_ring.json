@@ -1,0 +1,27 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:lysandre_ring"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:keystone"
+    },
+    {
+      "count": 4,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.50,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:iron_ingot"
+    }
+  ]
+}

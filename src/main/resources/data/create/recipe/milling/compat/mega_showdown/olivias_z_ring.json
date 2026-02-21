@@ -1,0 +1,28 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:olivias_z_ring"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:sparkling_stone_light"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:copper_ingot"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:amethyst_shard"
+    },
+    {
+      "chance": 0.50,
+      "count": 1,
+      "id": "minecraft:copper_ingot"
+    }
+  ]
+}

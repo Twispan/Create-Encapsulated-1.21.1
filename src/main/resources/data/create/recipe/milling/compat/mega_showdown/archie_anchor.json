@@ -1,0 +1,28 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:archie_anchor"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:keystone"
+    },
+    {
+      "count": 3,
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:chain"
+    },
+    {
+      "chance": 0.50,
+      "count": 2,
+      "id": "minecraft:diamond"
+    }
+  ]
+}

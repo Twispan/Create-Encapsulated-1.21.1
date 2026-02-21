@@ -1,0 +1,28 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:olivia_z_power_ring"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:sparkling_stone_dark"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:iron_nugget"
+    },
+    {
+      "chance": 0.50,
+      "count": 2,
+      "id": "minecraft:iron_nugget"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "mega_showdown:omni_ring"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "id": "minecraft:netherite_ingot"
+    },
+    {
+      "id": "mega_showdown:wishing_star"
+    },
+    {
+      "id": "mega_showdown:keystone"
+    },
+    {
+      "id": "mega_showdown:sparkling_stone_light"
+    },
+    {
+      "id": "mega_showdown:tera_orb"
+    }
+  ]
+}

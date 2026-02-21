@@ -1,0 +1,28 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mega_showdown:lisia_mega_tiara"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "count": 1,
+      "id": "mega_showdown:keystone"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.50,
+      "count": 1,
+      "id": "minecraft:lapis_lazuli"
+    }
+  ]
+}
