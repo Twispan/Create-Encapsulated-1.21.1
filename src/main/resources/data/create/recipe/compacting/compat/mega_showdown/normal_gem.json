@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mega_showdown:normal_tera_shard"
+    },
+    {
+      "item": "mega_showdown:normal_tera_shard"
+    },
+    {
+      "item": "mega_showdown:normal_tera_shard"
+    },
+    {
+      "item": "mega_showdown:normal_tera_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:normal_gem"
+    }
+  ]
+}

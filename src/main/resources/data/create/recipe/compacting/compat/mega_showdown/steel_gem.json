@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mega_showdown:steel_tera_shard"
+    },
+    {
+      "item": "mega_showdown:steel_tera_shard"
+    },
+    {
+      "item": "mega_showdown:steel_tera_shard"
+    },
+    {
+      "item": "mega_showdown:steel_tera_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:steel_gem"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mega_showdown:fighting_tera_shard"
+    },
+    {
+      "item": "mega_showdown:fighting_tera_shard"
+    },
+    {
+      "item": "mega_showdown:fighting_tera_shard"
+    },
+    {
+      "item": "mega_showdown:fighting_tera_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:fighting_gem"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mega_showdown:rock_tera_shard"
+    },
+    {
+      "item": "mega_showdown:rock_tera_shard"
+    },
+    {
+      "item": "mega_showdown:rock_tera_shard"
+    },
+    {
+      "item": "mega_showdown:rock_tera_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:rock_gem"
+    }
+  ]
+}

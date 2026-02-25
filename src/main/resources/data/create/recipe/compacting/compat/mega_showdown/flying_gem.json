@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mega_showdown:flying_tera_shard"
+    },
+    {
+      "item": "mega_showdown:flying_tera_shard"
+    },
+    {
+      "item": "mega_showdown:flying_tera_shard"
+    },
+    {
+      "item": "mega_showdown:flying_tera_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:flying_gem"
+    }
+  ]
+}

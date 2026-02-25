@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mega_showdown:bug_tera_shard"
+    },
+    {
+      "item": "mega_showdown:bug_tera_shard"
+    },
+    {
+      "item": "mega_showdown:bug_tera_shard"
+    },
+    {
+      "item": "mega_showdown:bug_tera_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:bug_gem"
+    }
+  ]
+}

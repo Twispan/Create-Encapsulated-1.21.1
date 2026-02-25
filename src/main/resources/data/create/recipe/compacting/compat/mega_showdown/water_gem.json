@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mega_showdown:water_tera_shard"
+    },
+    {
+      "item": "mega_showdown:water_tera_shard"
+    },
+    {
+      "item": "mega_showdown:water_tera_shard"
+    },
+    {
+      "item": "mega_showdown:water_tera_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon:water_gem"
+    }
+  ]
+}
