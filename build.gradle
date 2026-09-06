@@ -47,6 +47,9 @@ dependencies {
 
     // Create, Ponder, Flywheel, Registrate
     implementation "maven.modrinth:LNytGWDc:UjX6dr61"
+
+    // World of Color's current build
+    implementation files('../world_of_color/build/libs/world_of_color-1.1.1.jar')
 }
 
 base {
