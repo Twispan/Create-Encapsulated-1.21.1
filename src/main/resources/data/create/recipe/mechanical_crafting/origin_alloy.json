@@ -3,7 +3,7 @@
   "accept_mirrored": true,
   "key": {
     "A": {
-      "item": "cobblemon:normal_gem_block_block"
+      "item": "cobblemon:normal_gem_block"
     },
     "B": {
       "item": "cobblemon:fighting_gem_block"
