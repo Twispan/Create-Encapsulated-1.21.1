@@ -10,7 +10,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "create_encapsulated:custom/get_paint",
+  "parent": "create_encapsulated:custom/split_apricorn",
   "criteria": {
     "trigger": {
       "trigger": "minecraft:inventory_changed",
