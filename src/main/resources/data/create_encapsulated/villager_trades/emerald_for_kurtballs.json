@@ -1,5 +1,5 @@
 {
-  "profession": "create_encapsulated:carpenter",
+  "profession": "woodcarved:carpenter",
   "level": 5,
   "buy_item": {"id": "minecraft:emerald", "count": 4},
   "sell_item": {"tag": "cobblemon:apricorn_poke_balls", "count": 1},

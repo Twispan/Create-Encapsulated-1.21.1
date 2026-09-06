@@ -1,5 +1,5 @@
 {
-  "profession": "create_encapsulated:carpenter",
+  "profession": "woodcarved:carpenter",
   "level": 4,
   "buy_item": {"id": "minecraft:emerald", "count": 2},
   "sell_item": {"ids": ["create:andesite_casing","create:cogwheel"], "count": 1},
