@@ -108,6 +108,6 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
     modId="world_of_color"
     type="required"
-    versionRange="[1.0,)"
+    versionRange="[1.2,)"
     ordering="NONE"
     side="BOTH"

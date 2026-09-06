@@ -2,12 +2,17 @@ package com.twispan.create_encapsulated;
 
 import com.cobblemon.mod.common.CobblemonItems;
 import com.twispan.create_encapsulated.client.ModClientSetup;
-import com.twispan.create_encapsulated.util.EmptyBottleFluidHandler;
+import com.twispan.create_encapsulated.fluid.MedicinalBrewFluidType;
+import com.twispan.create_encapsulated.fluid.other_medicine.OMedicineFluidType;
+import com.twispan.create_encapsulated.fluid.potions.PotionFluidType;
+import com.twispan.create_encapsulated.fluid.vitamins.VitaminFluidType;
 import com.twispan.create_encapsulated.registries.items.ModCreativeModeTabs;
+import com.twispan.create_encapsulated.util.FluidMapper;
 import com.twispan.create_encapsulated.util.FluidItemHandler;
 import com.twispan.create_encapsulated.registries.ModFluids;
 import com.twispan.create_encapsulated.registries.items.ModItems;
-import net.minecraft.world.item.Items;
+import com.itsfirestorm.world_of_color.api.BottleFillRegistry;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -71,6 +76,27 @@ public class CreateEncapsulated {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         NeoForgeMod.enableMilkFluid();
+
+        BottleFillRegistry.register(
+                stack -> stack.getFluidType() instanceof MedicinalBrewFluidType,
+                stack -> new ItemStack(CobblemonItems.MEDICINAL_BREW)
+        );
+        BottleFillRegistry.register(
+                stack -> stack.getFluidType() instanceof PotionFluidType,
+                stack -> FluidMapper.getPotionItem((PotionFluidType) stack.getFluidType())
+        );
+        BottleFillRegistry.register(
+                stack -> stack.getFluid() == NeoForgeMod.MILK.get(),
+                stack -> new ItemStack(CobblemonItems.MOOMOO_MILK)
+        );
+        BottleFillRegistry.register(
+                stack -> stack.getFluidType() instanceof VitaminFluidType,
+                stack -> FluidMapper.getVitaminItem((VitaminFluidType) stack.getFluidType())
+        );
+        BottleFillRegistry.register(
+                stack -> stack.getFluidType() instanceof OMedicineFluidType,
+                stack -> FluidMapper.getOMedicineItem((OMedicineFluidType) stack.getFluidType())
+        );
     }
 
     // Add the example block item to the building blocks tab
@@ -303,13 +329,6 @@ public class CreateEncapsulated {
                 (stack, context) -> new FluidItemHandler(stack,
                         new FluidStack(NeoForgeMod.MILK.get(), 250)),
                 CobblemonItems.MOOMOO_MILK
-        );
-
-        // Empty bottle handler
-        event.registerItem(
-                Capabilities.FluidHandler.ITEM,
-                (stack, context) -> new EmptyBottleFluidHandler(stack),
-                Items.GLASS_BOTTLE
         );
     }
 
