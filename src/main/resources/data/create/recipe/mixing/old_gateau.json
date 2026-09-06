@@ -3,10 +3,13 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "cobblemon:hearty_grains"
+      "item": "minecraft:potato"
     },
     {
-      "item": "minecraft:potato"
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:beetroot"
     },
     {
       "type": "neoforge:single",
@@ -16,8 +19,7 @@
   ],
   "results": [
     {
-      "count": 4,
-      "id": "cobblemon:potato_mochi"
+      "id": "cobblemon:old_gateau"
     }
   ]
 }

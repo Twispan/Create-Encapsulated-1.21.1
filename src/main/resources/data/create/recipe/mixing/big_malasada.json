@@ -3,21 +3,23 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "cobblemon:hearty_grains"
+      "item": "minecraft:wheat"
     },
     {
-      "item": "minecraft:potato"
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:pumpkin"
     },
     {
       "type": "neoforge:single",
       "amount": 250,
-      "fluid": "create:honey"
+      "fluid": "minecraft:milk"
     }
   ],
   "results": [
     {
-      "count": 4,
-      "id": "cobblemon:potato_mochi"
+      "id": "cobblemon:big_malasada"
     }
   ]
 }

@@ -6,7 +6,10 @@
       "item": "cobblemon:hearty_grains"
     },
     {
-      "item": "minecraft:potato"
+      "item": "cobblemon:hearty_grains"
+    },
+    {
+      "item": "minecraft:sweet_berries"
     },
     {
       "type": "neoforge:single",
@@ -16,8 +19,7 @@
   ],
   "results": [
     {
-      "count": 4,
-      "id": "cobblemon:potato_mochi"
+      "id": "cobblemon:jubilife_muffin"
     }
   ]
 }

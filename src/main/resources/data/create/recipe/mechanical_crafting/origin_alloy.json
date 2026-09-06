@@ -3,58 +3,58 @@
   "accept_mirrored": true,
   "key": {
     "A": {
-      "item": "cobblemon:normal_gem"
+      "item": "cobblemon:normal_gem_block_block"
     },
     "B": {
-      "item": "cobblemon:fighting_gem"
+      "item": "cobblemon:fighting_gem_block"
     },
     "C": {
-      "item": "cobblemon:flying_gem"
+      "item": "cobblemon:flying_gem_block"
     },
     "D": {
-      "item": "cobblemon:poison_gem"
+      "item": "cobblemon:poison_gem_block"
     },
     "E": {
-      "item": "cobblemon:ground_gem"
+      "item": "cobblemon:ground_gem_block"
     },
     "F": {
-      "item": "cobblemon:rock_gem"
+      "item": "cobblemon:rock_gem_block"
     },
     "G": {
-      "item": "cobblemon:bug_gem"
+      "item": "cobblemon:bug_gem_block"
     },
     "H": {
-      "item": "cobblemon:ghost_gem"
+      "item": "cobblemon:ghost_gem_block"
     },
     "I": {
-      "item": "cobblemon:fire_gem"
+      "item": "cobblemon:fire_gem_block"
     },
     "M": {
-      "item": "cobblemon:water_gem"
+      "item": "cobblemon:water_gem_block"
     },
     "N": {
-      "item": "cobblemon:grass_gem"
+      "item": "cobblemon:grass_gem_block"
     },
     "O": {
-      "item": "cobblemon:electric_gem"
+      "item": "cobblemon:electric_gem_block"
     },
     "P": {
-      "item": "cobblemon:psychic_gem"
+      "item": "cobblemon:psychic_gem_block"
     },
     "Q": {
-      "item": "cobblemon:ice_gem"
+      "item": "cobblemon:ice_gem_block"
     },
     "R": {
-      "item": "cobblemon:dragon_gem"
+      "item": "cobblemon:dragon_gem_block"
     },
     "S": {
-      "item": "cobblemon:dark_gem"
+      "item": "cobblemon:dark_gem_block"
     },
     "T": {
-      "item": "cobblemon:steel_gem"
+      "item": "cobblemon:steel_gem_block"
     },
     "U": {
-      "item": "cobblemon:fairy_gem"
+      "item": "cobblemon:fairy_gem_block"
     },
     "J": {
       "item": "minecraft:netherite_scrap"
