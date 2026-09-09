@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "cobblemon:wattmel_berry"
+      "item": "cobblemon:watmel_berry"
     }
   ],
   "processing_time": 200,

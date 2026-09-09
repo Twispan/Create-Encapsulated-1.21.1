@@ -2,14 +2,14 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "cobblemon:white_apricorn_sprout"
+      "item": "cobblemon:black_apricorn_seed"
     }
   ],
   "processing_time": 100,
   "results": [
     {
       "count": 1,
-      "id": "minecraft:white_dye"
+      "id": "minecraft:black_dye"
     }
   ]
 }

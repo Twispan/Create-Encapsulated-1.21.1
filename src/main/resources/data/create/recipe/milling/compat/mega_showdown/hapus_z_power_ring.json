@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "mega_showdown:hapu_z_ring"
+      "item": "mega_showdown:hapu_z_power_ring"
     }
   ],
   "processing_time": 500,

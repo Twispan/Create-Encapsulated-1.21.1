@@ -2,14 +2,14 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "cobblemon:pink_apricorn_sprout"
+      "item": "cobblemon:red_apricorn_seed"
     }
   ],
   "processing_time": 100,
   "results": [
     {
       "count": 1,
-      "id": "minecraft:pink_dye"
+      "id": "minecraft:red_dye"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "cobblemon:pinab_berry"
+      "item": "cobblemon:pinap_berry"
     }
   ],
   "processing_time": 200,
